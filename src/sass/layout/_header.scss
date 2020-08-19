@@ -1,17 +1,20 @@
 
 header {
     padding: 15px;
+    min-height: 90px;
   .toggle-sidebar, .close-sidebar{
     cursor: pointer;
     display: none;
     @media #{$breakpoint-lg-md} {
       display: block;
+      width: 40px;
     }
   }
   .notification-2 {
     margin-top: 10px;
     @media #{$breakpoint-xs} {
       margin: 0;
+      display: none;
     }
   }
   .notification{
@@ -91,8 +94,8 @@ header {
 
   .notification-user{
     @media #{$breakpoint-xs} {
-        display: none;
-    }
+      min-width: 190px
+      }
     .dropdown-notification{
       min-width: 300px;
       top: 0 !important;

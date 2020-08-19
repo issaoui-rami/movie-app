@@ -74,7 +74,7 @@ render(){
                                 <span>{sliderItem.acteurs.acteur2}</span>
                               </p>
                               <p className="text-long">{sliderItem.desc}</p>
-                              <a href="fake_url" className="btn-carousel"><i className="fas fa-play"></i>Watch Noww</a>
+                              <a href="fake_url" className="btn-carousel"><i className="fas fa-play"></i><span>Watch Noww</span></a>
                             </div>
                           </div>
                           <img src={sliderItem.image} alt="img" />
