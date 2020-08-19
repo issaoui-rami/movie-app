@@ -1,0 +1,31 @@
+.channel{
+  display: none;
+  @media #{$breakpoint-lg-md} {
+    display: block;
+  }
+  .boxs-channel{
+    font-family: $fonts;
+    margin: 30px 0;
+    .title {
+        font-weight: 600;
+        color: #444444;
+        font-size: 17px;
+    }
+    .subscriber {
+      span {
+      color: #c5c5c5;
+      border: 1px solid;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 12px;
+      padding: 3px 10px;
+      font-weight: 600;
+      }
+      .active{
+        background-color: #93c750;
+        border-color: #93c750;
+        color: #fff;
+      }
+    }
+  }
+}

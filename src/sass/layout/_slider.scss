@@ -1,0 +1,187 @@
+.slider{
+  padding-top: 50px;
+  @media #{$breakpoint-lg-md} {
+    height: 100vh;
+    padding-top: 100px;
+  }
+
+}
+.owl-carousel.banner-home {
+
+  .owl-item{
+    img{
+      border-radius: 20px;
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: rotate(90deg);
+    .owl-dot{
+      &.active{
+        span{
+          background: $colorPrincipale !important;
+        }
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .item {
+    position: relative;
+    font-family: $fonts;
+    .desc-owl {
+      position: absolute;
+      max-width: 550px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      padding: 0 40px;
+      .sub-title{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $whiteColor;
+        letter-spacing: 3px;
+      }
+      .btn-tag{
+        margin-bottom: 15px;
+        a{
+          margin-right: 25px;
+          color: $whiteColor;
+          font-size: 14px;
+          border: 1px solid;
+          padding: 2px 10px;
+          border-radius: 4px;
+          text-decoration: none;
+          transition: .3s;
+          &:hover{
+            color: $colorPrincipale;
+          }
+        }
+      }
+      .text-desc{
+        h1{
+          font-size: 45px;
+          font-weight: 700;
+          color: $whiteColor;
+        }
+        .label-desc{
+
+          span{
+            color: $whiteColor;
+            margin-right: 25px;
+            font-size: 14px;
+          }
+        }
+        .text-long{
+          color: $whiteColor;
+          margin-bottom: 50px;
+        }
+        .btn-carousel{
+          background-color: $colorPrincipale;
+          color: $whiteColor;
+          padding: 5px 25px;
+          border-radius: 3px;
+          text-decoration: none;
+          border: 1px solid $colorPrincipale;
+          transition: .3s;
+          i{
+            margin-right: 15px;
+            color: #fff;
+            font-size: 14px;
+          }
+          &:hover{
+            background-color: transparent;
+            color: $colorPrincipale;
+          }
+        }
+      }
+    }
+    @media #{$breakpoint-md} {
+      .label-desc, .text-long, .btn-tag, .sub-title {
+          display: none;
+      }
+      h1{
+        font-size: 22px !important;
+      }
+    }
+    @media #{$breakpoint-xs} {
+      .label-desc, .text-long, .btn-tag, .sub-title {
+          display: none;
+      }
+      h1{
+        font-size: 20px !important;
+      }
+    }
+  }
+}
+
+
+/* ------------------- Recomended trending carousel ----------- */
+.recomended{
+  @media #{$breakpoint-xs} {
+    padding-top: 50px;
+  }
+  @media #{$breakpoint-md} {
+    padding-top: 50px;
+  }
+}
+.owl-carousel-4{
+  font-family: $fonts;
+  .owl-item {
+    a{
+      text-decoration: none;
+      display: block;
+      &:hover{
+      img {
+          filter: grayscale(1);
+        }
+      }
+    }
+    img {
+      border-radius: 10px 10px 0 0;
+      transition: .5s;
+    }
+  }
+  .time-film {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #454545;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+  }
+  .boxs-info {
+    margin-top: 15px;
+    .title{
+      font-weight: 700;
+      color: #444444;
+      font-size: 18px;
+    }
+    .view-film {
+    color: #8e8e8e;
+    }
+  }
+  .owl-nav.disabled {
+    display: block !important;
+    position: absolute;
+    top: -70px;
+    right: 0;
+  }
+  .owl-prev, .owl-next {
+    span {
+      font-size: 40px;
+      margin-right: 20px;
+    }
+    &:focus{
+      outline: none;
+      span {
+        color : $colorPrincipale;
+      }
+    }
+  }
+}

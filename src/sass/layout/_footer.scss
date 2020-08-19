@@ -1,0 +1,39 @@
+footer {
+    background-color: #272727;
+    padding: 35px;
+    color: $whiteColor;
+    h2{
+      font-family: $fonts;
+      color: $whiteColor;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 14px;
+      font-family: $fonts;
+      color: #8e8e8e;
+    }
+    .social-media {
+      li {
+      display: inline-block;
+      margin-right: 15px;
+      text-align: center;
+      a{
+        i{
+          width: 30px;
+          height: 30px;
+          background-color: $whiteColor;
+          line-height: 30px;
+          border-radius: 50px;
+          color: $colorPrincipale;
+          font-size: 14px;
+          transition: .3s;
+          }
+        &:hover i {
+          background-color: $colorPrincipale;
+          color: $whiteColor;
+        }
+        }
+      }
+    }
+}
