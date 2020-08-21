@@ -196,13 +196,17 @@ i{
 .page{
   min-height: 100vh;
   .content-area{
-    width: calc(100% - 90px);
+    width: 100%;
     min-height: 100%;
     transition: .3s;
     will-change: width;
     float: right;
+    background-color: $color2;
+    @media #{$breakpoint-lg-md} {
+      width: calc(100% - 90px);
+    }
     &.no-sidebar{
-      width: calc(100% - 200px);
+      width: calc(100% - 90px);
     }
   }
   .width-100{
@@ -214,7 +218,7 @@ i{
 }
 
 .titre-h1, .titre-h2, .titre-h3 {
-  color: #152029;
+  color: $textColor;
   font-family: $fonts;
   font-weight: 600;
 }

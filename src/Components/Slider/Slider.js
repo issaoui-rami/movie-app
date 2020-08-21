@@ -47,7 +47,7 @@ render(){
             {props => (
               <div style={props}>
                   <div className="slider">
-                    <div className="container">
+                    <div className="container-fluid">
 
                     {this.state.slider.length && (
                       <OwlCarousel

@@ -7,10 +7,10 @@
         "theme2" : "Animations",
         "theme3" : "Actions"
       },
-      "titre" : "Bad Boys For life",
+      "titre" : "Joker",
       "acteurs" : {
-        "acteur1" : "Will smith",
-        "acteur2" : "Martin Lawrence"
+        "acteur1" : "Joaquin Phoenix",
+        "acteur2" : "Jared Leto"
       },
       "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate tempus nibh varius cursus.",
       "image" : "../images/slider/slide1.jpg"
@@ -22,10 +22,10 @@
         "theme2" : "Adventure",
         "theme3" : "Actions"
       },
-      "titre" : "Radioactive",
+      "titre" : "Project Power",
       "acteurs" : {
-        "acteur1" : "Liva stomya",
-        "acteur2" : "Martin Lawrence"
+        "acteur1" : "Jamie Foxx",
+        "acteur2" : "Gordon-Levitt"
       },
       "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vulputate tempus nibh varius cursus.",
       "image" : "../images/slider/slide2.jpg"
@@ -99,6 +99,23 @@
       },
       "time" : "01:14:46",
       "avis" : "3"
+    },
+    {
+      "id" : 5,
+      "titre" : "Bad Boys For Life",
+      "categorie" : "recomended",
+      "themes" : {
+        "theme1" : "Animations",
+        "theme2" : "Adventure",
+        "theme3" : "Actions"
+      },
+      "image" : "../images/slider/trend1.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "time" : "01:14:46",
+      "avis" : "5"
     }
   ],
   "moviesTrending" : [
@@ -168,6 +185,23 @@
         "acteur2" : "Martin Lawrence"
       },
       "time" : "01:14:46",
+      "avis" : "3"
+    },
+    {
+      "id" : 5,
+      "titre" : "fil name",
+      "categorie" : "recomended",
+      "themes" : {
+        "theme1" : "Animations",
+        "theme2" : "Adventure",
+        "theme3" : "Actions"
+      },
+      "image" : "../images/slider/film3.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "time" : "02:05:46",
       "avis" : "3"
     }
   ]

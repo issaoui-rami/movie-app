@@ -17,7 +17,7 @@ export default class Navbar extends Component {
               return (
                 <li key={index}>
                   <a href={item.url}>
-                    <i className={item.icon}></i>
+                    <img src={item.icon} alt="img" />
                     <span className="menu-label">{item.title}</span></a>
                 </li>
               )

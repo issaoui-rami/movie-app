@@ -1,27 +1,17 @@
 export const MenuItems = [
   {
-    title: "Browse",
+    title: "Home",
     url: "fake_url",
-    icon: "far fa-window-restore"
+    icon: "../../images/menus/homepage.svg"
   },
   {
     title: "Tv Series",
     url: "fake_url",
-    icon: "fas fa-tv"
+    icon: "../../images/menus/tv.svg"
   },
   {
     title: "Movies",
     url: "fake_url",
-    icon: "fas fa-compact-disc"
-  },
-  {
-    title: "Playlist",
-    url: "fake_url",
-    icon: "far fa-list-alt"
-  },
-  {
-    title: "Comming soon",
-    url: "fake_url",
-    icon: "fas fa-film"
+    icon: "../../images/menus/film.svg"
   },
 ]

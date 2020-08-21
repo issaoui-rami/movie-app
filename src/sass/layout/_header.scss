@@ -2,11 +2,19 @@
 header {
     padding: 15px;
     min-height: 90px;
+    .boxs-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .box-notif {
+          display: flex;
+        }
+      }
   .toggle-sidebar, .close-sidebar{
     cursor: pointer;
-    display: none;
+    display: block;
     @media #{$breakpoint-lg-md} {
-      display: block;
+      display: none;
       width: 40px;
     }
   }
@@ -18,7 +26,6 @@ header {
     }
   }
   .notification{
-    float: right;
     .fa-bell{
       margin-left: 5px;
     }
@@ -106,6 +113,7 @@ header {
       min-width: 300px;
       justify-content: space-evenly;
       align-items: center;
+      color: $textColor;
       @media #{$breakpoint-xs} {
         min-width: 180px !important
         }

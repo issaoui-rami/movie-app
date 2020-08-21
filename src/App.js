@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App page home-page">
       <Sidebar />
-      <div className="content-area">
+      <div className="content-area container-fluid">
         <Header />
         <Slider />
         <Content />

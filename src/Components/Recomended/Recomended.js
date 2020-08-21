@@ -17,13 +17,13 @@ export default class Recomended extends Component {
     moviesRecomended : [],
     responsive:{
         0: {
-            items: 1,
+            items: 1.2,
         },
         600: {
-            items: 2,
+            items: 2.2,
         },
         1000: {
-            items: 4,
+            items: 4.4,
         }
     },
   }
@@ -44,19 +44,18 @@ export default class Recomended extends Component {
 
   render(){
     return(
-            <div className="recomended"
+            <div className="recomended section-padding-50"
               data-aos="fade-up"
               data-aos-offset="5"
               data-aos-delay="500"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               >
-              <div className="container">
+              <div className="container-fluid">
                 <h2 className="titre-h2 mb-30">Recomended</h2>
               {this.state.moviesRecomended.length && (
                 <OwlCarousel
                     className="owl-theme1 owl-carousel-4"
-                    loop
                     nav
                     margin= {30}
                     responsive={this.state.responsive}
@@ -65,11 +64,12 @@ export default class Recomended extends Component {
                     {this.state.moviesRecomended.map(movieItem =>
                       (movieItem.categorie === "recomended" ? <div className="item" key={movieItem.id}>
                             <a href="fake_url">
-                            <img src={movieItem.image} alt="img" />
+                            <div className="img-film"><img src={movieItem.image} alt="img" /></div>
                             <div className="time-film">{movieItem.time}</div>
                             <div className="boxs-info">
                               <div className="title">{movieItem.titre}</div>
                                 <div className="view-film rating">
+                                  <span>{movieItem.avis}.0</span>
                                   <ReactStars
                                   count={5}
                                   onChange={ratingChanged}
@@ -81,7 +81,9 @@ export default class Recomended extends Component {
                                   halfIcon={<i className="fa fa-star-half-alt"></i>}
                                   fullIcon={<i className="fa fa-star"></i>}
                                   activeColor="#ff744f"
-                                /></div>
+                                />
+
+                              </div>
                             </div>
                             </a>
                           </div>

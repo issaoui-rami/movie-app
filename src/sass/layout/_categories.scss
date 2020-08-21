@@ -1,0 +1,37 @@
+.categories{
+
+  .categorie-box{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: $color1;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    a{
+      text-decoration: none;
+      display: block;
+    }
+    img{
+      width: 60px;
+      padding: 10px;
+      border-radius: 8px;
+      filter: grayscale(1);
+      transition: .3s;
+    }
+    p{
+      font-family: $fonts;
+      color: $textColor;
+      margin-top: 10px;
+      font-weight: 700;
+    }
+  &:hover {
+    background-color: $colorPrincipale;
+    img{
+      filter: grayscale(0);
+    }
+    p{
+      color: $color1;
+    }
+  }
+  }
+}

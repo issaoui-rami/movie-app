@@ -19,13 +19,13 @@ export default class Trending extends Component {
     moviesTrending : [],
     responsive:{
         0: {
-            items: 1,
+            items: 1.2,
         },
         600: {
-            items: 2,
+            items: 2.2,
         },
         1000: {
-            items: 4,
+            items: 4.4,
         }
     },
   }
@@ -50,7 +50,7 @@ export default class Trending extends Component {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <div className="container">
+        <div className="container-fluid">
           <h2 className="titre-h2 mb-30">Trending</h2>
 
         {this.state.moviesTrending.length && (
@@ -65,7 +65,7 @@ export default class Trending extends Component {
           {this.state.moviesTrending.map(movieItem =>
             <div className="item" key={movieItem.id}>
               <a href="fake_url">
-              <img src={movieItem.image} alt="img" />
+              <div className="img-film"><img src={movieItem.image} alt="img" /></div>
               <div className="time-film">{movieItem.time}</div>
               <div className="boxs-info">
                 <div className="title">{movieItem.titre}</div>

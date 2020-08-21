@@ -3,64 +3,61 @@
   top: 0;
   left: 0;
   padding: 15px;
-  width: 200px;
+  width: 100px;
   height: 100%;
-  background-color: $bg-color1;
+  background-color: $color1;
   transition: .3s;
   .logo{
     text-align: center;
     font-weight: 700;
-    font-size: 26px;
-    margin-bottom: 30px;
+    font-size: 14px;
     color: $colorPrincipale;
   }
   .links-menus{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
     li{
-      width: 150px;
-      margin: 5px auto;
+      margin-bottom: 25px;
+
       a{
-        display: block;
-        color: $textColor;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-radius: 10px;
-        transition: .3s;
         font-family: $fonts;
-        &:hover{
-          text-decoration: none;
-          background-color: $colorPrincipale;
-          color: $whiteColor;
-          i{
-            color: $whiteColor;
-          }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $textColor;
+        text-decoration: none;
+        &:hover img {
+          background-color: #df5d51;
+          border-radius: 10px;
         }
-      }
-      i{
-        display: block;
-        margin-bottom: 10px;
+        img{
+          width: 60px;
+          background-color: $color2;
+          padding: 15px;
+          margin-bottom: 10px;
+          border-radius: 20px;
+          transition: .3s ease-in;
+        }
       }
     }
   }
   &.no-sidebar{
-    left: 0;
-    width: 90px;
+    left: -100px;
+    width: 100px;
+    @media #{$breakpoint-lg-md} {
+      left: 0;
+    }
     .logo{
       font-size: 12px;
     }
-    .menu-label{
-      display: none;
-    }
     li {
-      width: inherit;
-      margin: 10px;
       a{
-        padding-top: 10px;
-        padding-bottom: 10px;
+
         i{
-          margin-bottom: 0;
-          padding: 5px;margin-bottom: 0;
-          padding: 5px;
+
         }
       }
     }

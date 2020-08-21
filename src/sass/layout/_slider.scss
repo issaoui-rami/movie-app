@@ -1,13 +1,27 @@
-.slider{
-  padding-top: 50px;
-  @media #{$breakpoint-lg-md} {
-    height: 100vh;
-    padding-top: 100px;
-  }
+.slider {
 
+  @media #{$breakpoint-md}{
+    background-image: url(/images/slider/slide2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: 65% center;
+    border-radius: 20px;
+  }
+  @media #{$breakpoint-xs}{
+    background-image: url(/images/slider/slide2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+  .banner-home{
+    display: none !important;
+    @media #{$breakpoint-lg-md}{
+      display: block !important;
+    }
+}
 }
 .owl-carousel.banner-home {
-
   .owl-item{
     img{
       border-radius: 20px;
@@ -135,18 +149,26 @@
 .owl-carousel-4{
   font-family: $fonts;
   .owl-item {
+
     a{
       text-decoration: none;
       display: block;
+      background: #16171c;
+      border-radius: 10px;
+      padding: 14px;
       &:hover{
       img {
           filter: grayscale(1);
+          transform: scale(1.2)
         }
       }
     }
-    img {
-      border-radius: 10px 10px 0 0;
-      transition: .5s;
+    .img-film{
+      overflow: hidden;
+      img {
+        border-radius: 10px 10px 0 0;
+        transition: .5s;
+      }
     }
   }
   .time-film {
@@ -163,25 +185,49 @@
     margin-top: 15px;
     .title{
       font-weight: 700;
-      color: #444444;
+      color: $textColor;
       font-size: 18px;
     }
     .view-film {
-    color: #8e8e8e;
+      color: #8e8e8e;
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      span{
+        margin-right: 10px;
+      }
     }
   }
-  .owl-nav.disabled {
-    display: block !important;
-    position: absolute;
-    top: -70px;
-    right: 0;
+
+  .owl-nav{
+
+    @media #{$breakpoint-lg-md}{
+      display: block !important;
+      position: absolute;
+      top: -80px;
+      right: 0;
+    }
+    @media #{$breakpoint-xs}{
+      margin-top: 25px;
+    }
+    &.disabled {
+      display: block !important;
+      position: absolute;
+      top: -80px;
+      right: 0;
+
+    }
   }
   .owl-prev, .owl-next {
+    background: $color1 !important;
+    width: 40px;
+    margin-left: 15px;
+    border-radius: 15px;
     span {
       font-size: 40px;
-      margin-right: 20px;
+      color: $textColor;
     }
-    &:focus{
+    &:focus, &:hover{
       outline: none;
       span {
         color : $colorPrincipale;
