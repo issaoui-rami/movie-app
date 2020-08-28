@@ -1,0 +1,67 @@
+.box-movies{
+  font-family: $fonts;
+  .movie-item{
+    position: relative;
+    a{
+      text-decoration: none;
+      color: $textColor;
+      &:hover{
+        color: $colorPrincipale;
+      img {
+          filter: grayscale(1);
+          transform: scale(1.2) rotate(7deg);
+        }
+        .boxs-info {
+          background-color: $color1;
+        }
+      }
+    }
+    .img-film{
+      overflow: hidden;
+      border-radius: 10px 10px 0 0;
+      img {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        transition: .5s;
+      }
+    }
+  }
+  .rating {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background-color: #454545;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+      i{
+        color: #f6cd37;
+        margin-right: 10px;
+      }
+  }
+  .boxs-info {
+    background-color: $boxColor;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 10px;
+    transition: .5s;
+    .title{
+      font-weight: 700;
+      color: $textColor;
+      font-size: 18px;
+      font-family: $fonts;
+    }
+    .view-film {
+      color: #8e8e8e;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      justify-content: space-between;
+    }
+  }
+
+}
+.search-text{
+    font-family: $fonts;
+    color: $textColor;
+}

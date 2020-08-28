@@ -97,7 +97,7 @@
           background-color: $colorPrincipale;
           color: $whiteColor;
           padding: 5px 25px;
-          border-radius: 3px;
+          border-radius: 50px;
           text-decoration: none;
           border: 1px solid $colorPrincipale;
           transition: .3s;
@@ -152,26 +152,28 @@
 
     a{
       text-decoration: none;
-      display: block;
-      background: #16171c;
-      border-radius: 10px;
-      padding: 14px;
+      color: $textColor;
       &:hover{
+        color: $colorPrincipale;
       img {
           filter: grayscale(1);
-          transform: scale(1.2)
+          transform: scale(1.2) rotate(7deg);
+        }
+        .boxs-info {
+          background-color: $color1;
         }
       }
     }
     .img-film{
       overflow: hidden;
+      border-radius: 10px 10px 0 0;
       img {
         border-radius: 10px 10px 0 0;
         transition: .5s;
       }
     }
   }
-  .time-film {
+  .rating {
       position: absolute;
       top: 5px;
       right: 5px;
@@ -180,22 +182,28 @@
       padding: 5px 10px;
       font-size: 13px;
       border-radius: 5px;
+      i{
+        color: #f6cd37;
+        margin-right: 10px;
+      }
   }
   .boxs-info {
-    margin-top: 15px;
+    background-color: $boxColor;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 10px;
+    transition: .5s;
     .title{
       font-weight: 700;
       color: $textColor;
       font-size: 18px;
+      font-family: $fonts;
     }
     .view-film {
       color: #8e8e8e;
       display: flex;
       align-items: center;
-      font-weight: 700;
-      span{
-        margin-right: 10px;
-      }
+      font-weight: 500;
+      justify-content: space-between;
     }
   }
 

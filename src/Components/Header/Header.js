@@ -29,9 +29,11 @@ export default class Header extends Component {
 
           <div className="box-right">
             <i className="fas fa-bars toggle-sidebar"></i>
+
           </div>
 
           <div className="box-notif">
+    
 
             {/* drop notification */}
             <div className="dropdown notification notification-2 dropleft">

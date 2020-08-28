@@ -6,31 +6,27 @@
     background-color: $color1;
     border-radius: 10px;
     cursor: pointer;
-    transition: .3s;
+    transition: .5s;
     a{
       text-decoration: none;
       display: block;
-    }
-    img{
-      width: 60px;
-      padding: 10px;
-      border-radius: 8px;
-      filter: grayscale(1);
-      transition: .3s;
-    }
-    p{
       font-family: $fonts;
       color: $textColor;
       margin-top: 10px;
-      font-weight: 700;
+      font-weight: 500;
+    }
+    img{
+      width: 60px !important;
+      padding: 10px;
+      border-radius: 8px;
+      transition: .5s;
+      text-align: center;
+      margin: 0 auto;
     }
   &:hover {
     background-color: $colorPrincipale;
     img{
-      filter: grayscale(0);
-    }
-    p{
-      color: $color1;
+      transform: rotate(360deg);
     }
   }
   }

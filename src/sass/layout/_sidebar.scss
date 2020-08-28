@@ -7,11 +7,13 @@
   height: 100%;
   background-color: $color1;
   transition: .3s;
-  .logo{
+  .logo {
     text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    color: $colorPrincipale;
+    a{
+      font-weight: 700;
+      font-size: 14px;
+      color: $colorPrincipale;
+    }
   }
   .links-menus{
     text-align: center;
@@ -30,7 +32,7 @@
         color: $textColor;
         text-decoration: none;
         &:hover img {
-          background-color: #df5d51;
+          background-color: $colorPrincipale;
           border-radius: 10px;
         }
         img{
@@ -52,14 +54,6 @@
     }
     .logo{
       font-size: 12px;
-    }
-    li {
-      a{
-
-        i{
-
-        }
-      }
     }
   }
 }

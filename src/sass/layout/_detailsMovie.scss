@@ -1,0 +1,79 @@
+.details{
+  color: $textColor;
+  font-family: $fonts;
+
+  .box-cover{
+    text-align: center;
+    .cover{
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+    }
+    .btn-stream{
+      color: $textColor;
+      display: block;
+      margin: 20px 0;
+      background-color: $colorPrincipale;
+      padding: 10px 0;
+      border-radius: 15px;
+      text-decoration: none;
+      transition: .5s;
+      &:hover{
+        background-color: $btnColorSecondo;
+      }
+    }
+    .btn-retour {
+      display: block;
+      color: $textColor;
+      text-decoration: none;
+      font-weight: 500;
+      transition: .5s;
+      &:hover{
+        color: $colorPrincipale;
+      }
+    }
+    .fa-play, .fa-angle-left {
+    margin-right: 10px;
+    }
+  }
+  .details-list{
+    margin-top: 10px;
+    @media #{$breakpoint-md}{
+      margin-top: 20px;
+    }
+    @media #{$breakpoint-xs}{
+      margin-top: 60px;
+    }
+    .header-box {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        li{
+          strong{
+            margin-right: 10px;
+            color: $colorPrincipale;
+            @media #{$breakpoint-xs}{
+              display: none;
+            }
+          }
+          .fa-star{
+            color: $starColor;
+          }
+        }
+        .sur10 {
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+    }
+    .content-box{
+      p{
+        font-size: 18px;
+      }
+    }
+    .more-info {
+      li {
+        padding: 8px 0;
+      }
+    }
+  }
+}

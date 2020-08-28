@@ -1,42 +1,62 @@
 export const CategorieItem = [
   {
     title: "Action",
-    url: "fake_url",
+    url: "Action",
     icon: "../../images/categories/action.svg"
   },
   {
     title: "Comedy",
-    url: "fake_url",
+    url: "comedy",
     icon: "../../images/categories/comedy.svg"
   },
   {
     title: "Drama",
-    url: "fake_url",
+    url: "drama",
     icon: "../../images/categories/drama.svg"
   },
   {
     title: "Fantasy",
-    url: "fake_url",
+    url: "fantasy",
     icon: "../../images/categories/fantasy.svg"
   },
   {
     title: "Horror",
-    url: "fake_url",
+    url: "horror",
     icon: "../../images/categories/horror.svg"
   },
   {
     title: "Romance",
-    url: "fake_url",
+    url: "romance",
     icon: "../../images/categories/romance.svg"
   },
   {
-    title: "Families",
-    url: "fake_url",
-    icon: "../../images/categories/families.svg"
+    title: "Family",
+    url: "family",
+    icon: "../../images/categories/family.svg"
   },
   {
     title: "Kids",
-    url: "fake_url",
+    url: "kids",
     icon: "../../images/categories/kids.svg"
+  },
+  {
+    title: "History",
+    url: "history",
+    icon: "../../images/categories/history.svg"
+  },
+  {
+    title: "Crime & Thriller",
+    url: "crime",
+    icon: "../../images/categories/crime.svg"
+  },
+  {
+    title: "Science-fiction",
+    url: "science",
+    icon: "../../images/categories/science-fiction.svg"
+  },
+  {
+    title: "Sport & Fitness",
+    url: "sport",
+    icon: "../../images/categories/sport.svg"
   },
 ]

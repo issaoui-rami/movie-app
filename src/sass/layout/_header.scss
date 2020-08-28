@@ -6,8 +6,12 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .box-right{
+        display: flex;
+      }
       .box-notif {
           display: flex;
+          align-items: center;
         }
       }
   .toggle-sidebar, .close-sidebar{
@@ -19,7 +23,6 @@ header {
     }
   }
   .notification-2 {
-    margin-top: 10px;
     @media #{$breakpoint-xs} {
       margin: 0;
       display: none;
@@ -64,7 +67,7 @@ header {
       }
     }
     .notif-content{
-      padding: 25px;
+      padding: 8px;
       border-bottom: 1px solid #e6e8ec;
       li {
         font-size: 13px;
@@ -107,6 +110,9 @@ header {
       &:before{
         right: 52px;
       }
+      @media #{$breakpoint-xs} {
+        min-width: 190px !important
+        }
     }
     .box-user {
       display: flex;
@@ -127,9 +133,15 @@ header {
     .text-user {
       font-size: 13px;
     }
-    .notif-content img {
+    .notif-content {
+      img{
         width: 40px;
         border-radius: 50px;
+        @media #{$breakpoint-xs} {
+          display: none;
+        }
+      }
+
     }
     .notif-footer {
       .notif-link {

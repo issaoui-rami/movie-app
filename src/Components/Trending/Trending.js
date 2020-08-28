@@ -4,14 +4,10 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import axios from 'axios'
-import ReactStars from "react-rating-stars-component";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 
-const ratingChanged = (newRating) => {
-  console.log(newRating);
-};
 
 export default class Trending extends Component {
 
@@ -19,13 +15,15 @@ export default class Trending extends Component {
     moviesTrending : [],
     responsive:{
         0: {
-            items: 1.2,
+            items: 1,
+            stagePadding: 50,
         },
-        600: {
-            items: 2.2,
+        768: {
+            items: 2,
+            stagePadding: 50,
         },
         1000: {
-            items: 4.4,
+            items: 6,
         }
     },
   }
@@ -59,31 +57,28 @@ export default class Trending extends Component {
           loop
           nav
           margin= {30}
+          stagePadding= {100}
           responsive={this.state.responsive}
           >
 
           {this.state.moviesTrending.map(movieItem =>
             <div className="item" key={movieItem.id}>
               <a href="fake_url">
-              <div className="img-film"><img src={movieItem.image} alt="img" /></div>
-              <div className="time-film">{movieItem.time}</div>
-              <div className="boxs-info">
-                <div className="title">{movieItem.titre}</div>
-                <div className="view-film rating">
-                  <ReactStars
-                  count={5}
-                  onChange={ratingChanged}
-                  size={24}
-                  value={parseInt(movieItem.avis, 10)}
-                  edit={false}
-                  isHalf={true}
-                  emptyIcon={<i className="far fa-star"></i>}
-                  halfIcon={<i className="fa fa-star-half-alt"></i>}
-                  fullIcon={<i className="fa fa-star"></i>}
-                  activeColor="#ff744f"
-                /></div>
+                  <div className="img-film"><img src={movieItem.image} alt="img" /></div>
+                    <div className="rating">
+                      <span><i className="fa fa-star"></i></span>
+                      <span>{movieItem.avis}.0</span>
+                    </div>
+                  <div className="boxs-info">
+                    <div className="title">{movieItem.titre}</div>
+                      <div className="view-film">
+                        <div className="annee">
+                          <span>{movieItem.annee}</span>
+                        </div>
+                        <div className="time-film">{movieItem.time}</div>
 
-              </div>
+                    </div>
+                  </div>
               </a>
             </div>
           )}

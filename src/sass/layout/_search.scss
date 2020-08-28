@@ -1,0 +1,30 @@
+
+
+.active-cyan-2 input.form-control[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid $colorPrincipale !important;
+  box-shadow: 0 1px 0 0 $colorPrincipale;
+}
+.active-cyan-2{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+
+.search-movie {
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    border: none !important;
+    border-bottom: 1px solid $textColor !important;
+    width: 0 !important;
+    padding: 0 !important;
+    transition: all .5s !important;
+    &.active-input{
+      width: 100% !important;
+    }
+}
+.toggleSearch{
+  cursor: pointer;
+}

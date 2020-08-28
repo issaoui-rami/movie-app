@@ -1,30 +1,55 @@
 import React, { Component } from 'react';
 import { CategorieItem } from './CategorieItem.js';
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Link } from 'react-router-dom';
 
 
 export default class Categories extends Component {
 
+  state= {
+    responsive:{
+        0: {
+            items: 3.8,
+        },
+        768: {
+            items: 6,
+        },
+        1000: {
+            items: 8,
+        }
+    },
+  }
+
+
   render() {
     return (
-      <div className="categories section-padding-50">
-        <h2 className="titre-h2 mb-30">Categorie</h2>
-        <div className="row">
-          {CategorieItem.map((item, index) => {
-            return (
-          <div className="col-md-2 col-lg-3 col-xl-3" key={index}>
-              <div className="categorie-box">
-                <a href={item.url}>
-                  <img src={item.icon} alt="img" />
-                  <p className="link-categorie">{item.title}</p>
-                </a>
-            </div>
-          </div>
+      <div className="col-lg-12 categories">
+          <OwlCarousel
+              className="owl-theme1"
+              loop
+              nav
+              margin= {30}
+              responsive={this.state.responsive}
+              >
+
+              {CategorieItem.map((item, index) => {
+                return (
+                  <div className="item" key={index}>
+                      <div className="categorie-box">
+                        <Link to={'/moviecategorie/' + item.url} >
+                          <img src={item.icon} alt="img" />
+                          <p className="link-categorie">{item.title}</p>
+                      </Link>
+                    </div>
+                  </div>
+                )
+            }
             )
           }
-          )}
-        </div>
+        </OwlCarousel>
+
       </div>
     )
   }

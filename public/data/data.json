@@ -36,16 +36,13 @@
       "id" : 1,
       "titre" : "Bad Boys For Life",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/film1.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "01:14:46",
       "avis" : "5"
     },
@@ -53,16 +50,13 @@
       "id" : 2,
       "titre" : "Joker",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/film2.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2019",
       "time" : "01:30:46",
       "avis" : "4"
     },
@@ -70,16 +64,13 @@
       "id" : 3,
       "titre" : "fil name",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/film3.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "02:05:46",
       "avis" : "3"
     },
@@ -87,16 +78,13 @@
       "id" : 4,
       "titre" : "Hello Film",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/film4.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "01:14:46",
       "avis" : "3"
     },
@@ -104,17 +92,56 @@
       "id" : 5,
       "titre" : "Bad Boys For Life",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/trend1.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2019",
       "time" : "01:14:46",
+      "avis" : "5"
+    },
+    {
+      "id" : 6,
+      "titre" : "Tyler Rake",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film5.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:14:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 7,
+      "titre" : "Spenser Confidential",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film6.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:09:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 8,
+      "titre" : "Fast and furious 9",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film7.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2019",
+      "time" : "01:45:10",
       "avis" : "5"
     }
   ],
@@ -122,17 +149,14 @@
     {
       "id" : 1,
       "titre" : "Bad Boys For Life",
-      "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "categorie" : "trending",
+      "genres" : "Actions",
       "image" : "../images/slider/trend1.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "01:14:46",
       "avis" : "5"
     },
@@ -140,16 +164,13 @@
       "id" : 2,
       "titre" : "Joker",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/trend2.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "01:30:46",
       "avis" : "4"
     },
@@ -157,16 +178,13 @@
       "id" : 3,
       "titre" : "fil name",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Drama",
       "image" : "../images/slider/trend3.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2019",
       "time" : "02:05:46",
       "avis" : "3"
     },
@@ -174,16 +192,13 @@
       "id" : 4,
       "titre" : "Hello Film",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/trend4.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "01:14:46",
       "avis" : "3"
     },
@@ -191,18 +206,279 @@
       "id" : 5,
       "titre" : "fil name",
       "categorie" : "recomended",
-      "themes" : {
-        "theme1" : "Animations",
-        "theme2" : "Adventure",
-        "theme3" : "Actions"
-      },
+      "genres" : "Actions",
       "image" : "../images/slider/film3.jpg",
       "acteurs" : {
         "acteur1" : "Will smith",
         "acteur2" : "Martin Lawrence"
       },
+      "annee" : "2020",
       "time" : "02:05:46",
       "avis" : "3"
+    },
+    {
+      "id" : 6,
+      "titre" : "Tyler Rake",
+      "categorie" : "recomended",
+      "genres" : "Romance",
+      "image" : "../images/slider/film5.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2019",
+      "time" : "01:14:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 7,
+      "titre" : "Spenser Confidential",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film6.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:09:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 8,
+      "titre" : "Fast and furious 9",
+      "categorie" : "recomended",
+      "genres" : "Comedy",
+      "image" : "../images/slider/film7.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:45:10",
+      "avis" : "5"
+    }
+  ],
+  "movies" : [
+    {
+      "id" : 1,
+      "titre" : "Cover",
+      "categorie" : "recomended",
+      "genres" : "Drama",
+      "image" : "../images/slider/film1.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:14:46",
+      "avis" : "5"
+    },
+    {
+      "id" : 2,
+      "titre" : "Joker",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film2.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2019",
+      "time" : "01:30:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 3,
+      "titre" : "fil name",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film3.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "02:05:46",
+      "avis" : "3"
+    },
+    {
+      "id" : 4,
+      "titre" : "Hello Film",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film4.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:14:46",
+      "avis" : "3"
+    },
+    {
+      "id" : 5,
+      "titre" : "Bad Boys For Life",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/trend1.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2019",
+      "time" : "01:14:46",
+      "avis" : "5"
+    },
+    {
+      "id" : 6,
+      "titre" : "Tyler Rake",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film5.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:14:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 7,
+      "titre" : "Spenser Confidential",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film6.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:09:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 8,
+      "titre" : "Fast and furious 9",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/film7.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2019",
+      "time" : "01:45:10",
+      "avis" : "5"
+    },
+    {
+      "id" : 9,
+      "titre" : "Bad Boys For Life",
+      "categorie" : "trending",
+      "genres" : "Actions",
+      "image" : "../images/slider/trend1.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:14:46",
+      "avis" : "5"
+    },
+    {
+      "id" : 10,
+      "titre" : "Joker",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/trend2.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:30:46",
+      "avis" : "4"
+    },
+    {
+      "id" : 11,
+      "titre" : "fil name",
+      "categorie" : "recomended",
+      "genres" : "Drama",
+      "image" : "../images/slider/trend3.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2019",
+      "time" : "02:05:46",
+      "avis" : "3"
+    },
+    {
+      "id" : 12,
+      "titre" : "Hello Film",
+      "categorie" : "recomended",
+      "genres" : "Actions",
+      "image" : "../images/slider/trend4.jpg",
+      "acteurs" : {
+        "acteur1" : "Will smith",
+        "acteur2" : "Martin Lawrence"
+      },
+      "annee" : "2020",
+      "time" : "01:14:46",
+      "avis" : "3"
+    }
+  ],
+  "actors" : [
+    {
+      "id" : 1,
+      "name" : "Frank Darabont",
+      "image" : "../images/actors/act1.webp"
+    },
+    {
+      "id" : 2,
+      "name" : "Tim Robbins",
+      "image" : "../images/actors/act2.webp"
+    },
+    {
+      "id" : 3,
+      "name" : "Morgan Freeman",
+      "image" : "../images/actors/act3.webp"
+    },
+    {
+      "id" : 4,
+      "name" : "Clancy Brown",
+      "image" : "../images/actors/act4.webp"
+    },
+    {
+      "id" : 5,
+      "name" : "Clancy Brown",
+      "image" : "../images/actors/act5.webp"
+    },
+    {
+      "id" : 6,
+      "name" : "Mark Rolston",
+      "image" : "../images/actors/act6.webp"
+    },
+    {
+      "id" : 7,
+      "name" : "James Whitmore",
+      "image" : "../images/actors/act7.webp"
+    },
+    {
+      "id" : 8,
+      "name" : "Gil Bellows",
+      "image" : "../images/actors/act8.webp"
+    },
+    {
+      "id" : 9,
+      "name" : "William Sadler",
+      "image" : "../images/actors/act9.webp"
+    },
+    {
+      "id" : 10,
+      "name" : "Jeffrey DeMunn",
+      "image" : "../images/actors/act10.webp"
     }
   ]
 
